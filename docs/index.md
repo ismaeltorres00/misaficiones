@@ -55,3 +55,7 @@ Este es mi kayak:
 |Mayo|8|
 
 Es muy importante llevar todo el equipo básico para poder tener una buena y tranquila jornada de pesca.
+
+<img srcset="img/1600.jpg 1600w, img/1000.jpg 1000w, img/800.jpg 800w, img/500.jpg 600w" src="img/1600.jpg" alt="Ejemplo de pixeles">
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.
