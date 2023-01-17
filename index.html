@@ -83,7 +83,7 @@
 <p>En este blog os voy a hablar un poco de mis aficiones. Me sirven para desconectar, conocer gente y divertirme de tantas horas de programación en
 Django y JavaScript.</p>
 <h2 id="airsoft">Airsoft</h2>
-<p>En primer lugar os voy a hablar del <strong>airsoft</strong>. Un deporte poco conocido pero muy interesante. Se juegan partidas por equipos donde cada uno ira equipado con sus armas que disparan bolas de plástico. Normalmente se crean misiones para hacer mas dinámicas las partidas recreando misiones reales o inventadas.</p>
+<p>En primer lugar os voy a hablar del <strong>airsoft</strong>. Un deporte poco conocido pero muy interesante. Se juegan partidas por equipos donde cada uno irá equipado con sus armas que disparan bolas de plástico. Normalmente se crean misiones para hacer mas dinámicas las partidas recreando misiones reales o inventadas.</p>
 <p>Tu rol puede ser uno de los siguiente:</p>
 <ul>
 <li>Médico</li>
@@ -91,8 +91,8 @@ Django y JavaScript.</p>
 <li>Mecánico</li>
 <li>Sniper</li>
 <li>Apoyo</li>
-<li>Primera linea</li>
-<li>Segunda linea</li>
+<li>Primera línea</li>
+<li>Segunda línea</li>
 <li>Artillero</li>
 </ul>
 <p>Las equipaciones y réplicas se pueden comprar en páginas como:</p>
@@ -104,12 +104,12 @@ Django y JavaScript.</p>
 </li>
 </ul>
 <p><img alt="Equipo de jugadores de airsoft" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Ftz0xn55u88821.jpg&amp;f=1&amp;nofb=1&amp;ipt=84d6142c7fd7b55737f47a814329264e4164e01bb0b0632e3ab69716be02af50&amp;ipo=images" /></p>
-<p><strong>Muy importante:</strong> Es un hobby en el cual se tienen que llevar todas las replicas en regla ya que es motivo de sanción.</p>
+<p><strong>Muy importante:</strong> Es un hobby en el cual se tienen que llevar todas las réplicas en regla ya que es motivo de sanción.</p>
 <h2 id="pesca">Pesca</h2>
-<p>Otra afición a la que le dedico mucho tiempo es la <strong>pesca</strong>. Ya sea desde costa, embarcación o kayak. En especifico yo practico la captura y suelta de las especies que pesco.</p>
+<p>Otra afición a la que le dedico mucho tiempo es la <strong>pesca</strong>. Ya sea desde costa, embarcación o kayak. En específico yo practico la captura y suelta de las especies que pesco.</p>
 <p>Es esta afición hay que tener mucha paciencia y no desanimarse ya que no siempre se vas a sacar las capturas que te gustaría.</p>
 <h3 id="pesca-en-kayak">Pesca en kayak</h3>
-<p>Voy a hablar de este tipo de pesca ya que es la que mas me gusta. Ya que también es en la que mas ejercicio físico hago teniendo que remar millas y millas.</p>
+<p>Voy a hablar de este tipo de pesca ya que es la que más me gusta. Ya que también es en la que más ejercicio físico hago teniendo que remar millas y millas.</p>
 <p>Este es mi kayak:</p>
 <p><img alt="Kayak azul modelo pro angler 12" src="https://www.kayaksonline.es/3680-large_default/big-pro-angler-12.jpg" /></p>
 <h3 id="pescas-2022">Pescas 2022</h3>
@@ -163,6 +163,22 @@ Smash Mouth - All Stars en formato mp3</p>
 <p><audio id="medio" controls loop>
     <source src="music/Smash-Mouth-All-Star.ogg" type='audio/ogg; codecs="vorbis"'>
 </audio></p>
+<p>Introduce un texto para reproducirlo</p>
+<!-- https://parzibyte.me/blog/2019/05/06/texto-voz-javascript-api-speechsynthesis/ -->
+
+<p><input type="text" id="textoLoquendo" placeholder="Introduzca una frase..."></p>
+<p><button onclick="loquendoTraduccion()">Reproducir</button>
+    <script>
+      function loquendoTraduccion() {
+        var texto = document.getElementById("textoLoquendo").value;
+        var voz = new SpeechSynthesisUtterance(texto);
+        voz.lang = "es-ES";
+        voz.voice = speechSynthesis.getVoices().find(function(voice) {
+          return voice.name === "loquendo";
+        });
+        speechSynthesis.speak(voz);
+      }
+</script></p>
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
 <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 <br/>Este obra está bajo una
@@ -210,5 +226,5 @@ Smash Mouth - All Stars en formato mp3</p>
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-01-16 21:53:21.382937+00:00
+Build Date UTC : 2023-01-17 11:11:30.010057+00:00
 -->
